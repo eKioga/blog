@@ -1,4 +1,5 @@
     <h1 id="page_title">Stuff I've Written</h1>
+
     <div id="posts_wrapper" class="skinny_wrapper">
         <% @posts.each do |post| %>
             <div class="post">
@@ -8,9 +9,5 @@
             </div>
         <% end %>
     </div>
-    <div class="pagination">
-        <span class="disabled prev_page">Previous</span>
-        <span class="current">1</span>
-        <a href="/users?page=2" rel="next">2</a>
-        <a href="/users?page=3">3</a>
-        <a href="/users?page=2" class="next_page" rel="next">Next</a></div>
+    
+<%= will_paginate @posts %>
