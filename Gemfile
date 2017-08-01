@@ -41,6 +41,9 @@ gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 # Allows the contact page to work.
 gem 'mail_form', '~> 1.7'
 
+# Allows emails to be sent
+gem 'sendgrid-ruby'
+
 # Allows for form authentication
 gem 'devise', '~> 4.3'
 
