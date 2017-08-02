@@ -7,6 +7,7 @@ This site also doubles as my learning tool or production environment while I exp
 # How I did it
 
 The Youtube tutorial series by Mackenzie Child was a huge help. Especially how he walks you through his front-end design. His videos where an amazing boost when it comes to getting this out there soon while learning a ridiculous amount at the same time. As I get more time, I plan on adding more features along with editing the design a bit.
+
                              _
                             | \
                             | |
