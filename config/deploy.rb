@@ -16,9 +16,18 @@ namespace :deploy do
   desc 'Upload .env'
   task :upload_env do
     on roles(:app) do |host|
-      upload! #{dir.pwd}/.env.#{fetch(rails_env)} , #{shared_path}/.env
+    upload! '.env', '/home/deploy/blog/shared/.env'
     end
   end
+
+#    on roles(:app) do |host|
+#      upload! '#{dir.pwd}/.env.#{fetch(rails_env)}' , '#{shared_path}/.env'
+#    end
+#  end
+
+# on hosts do |host|
+#  upload! '/config/database.yml', '/opt/my_project/shared/database.yml'
+# end
 
   desc 'Restart application'
   task :restart do
