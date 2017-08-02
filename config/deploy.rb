@@ -2,8 +2,8 @@
 lock "3.9.0"
 
 set :application, "blog"
-set :repo_url, "git@example.com:eKioga/blog.git"
-
+set :repo_url, "git@github.com:eKioga/blog.git"
+set :branch, ENV['BRANCH'] if ENV['BRANCH']
 set :rbenv_path, '/home/deploy/.rbenv/'
 
 set :deploy_to, '/home/deploy/blog'

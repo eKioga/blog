@@ -43,8 +43,8 @@ server '10.0.0.15', user: 'deploy', roles: %w{web app db}
 # Global options
 # --------------
 #  set :ssh_options, {
-#    keys: %w(/home/rlisowski/.ssh/id_rsa),
-#    forward_agent: false,
+#    keys: %w(~/.ssh/id_rsa.pub),
+#    forward_agent: true,
 #    auth_methods: %w(password)
 #  }
 #
