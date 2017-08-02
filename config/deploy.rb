@@ -16,7 +16,7 @@ namespace :deploy do
   desc 'Upload .env'
   task :upload_env do
     on roles(:app) do |host|
-    upload! '.env', '/home/deploy/blog/shared/.env'
+    upload! '.env', '/home/deploy/blog/.env'
     end
   end
 
