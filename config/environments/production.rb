@@ -85,7 +85,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   #sendgrid stuff
-  config.action_mailer.default_url_options = { host: 'https://eric-post.ddns.net' }
+  config.action_mailer.default_url_options = { host: 'http://eric-post.ddns.net' }
   config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
@@ -94,7 +94,7 @@ Rails.application.configure do
     :authentication => :plain,
     :user_name => ENV['SENDGRID_USERNAME'],
     :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'https://eric-post.ddns.net',
+    :domain => 'http://eric-post.ddns.net',
     :enable_starttls_auto => true
   }
 end
